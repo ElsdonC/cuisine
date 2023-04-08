@@ -1,0 +1,179 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Prata', serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 7vh;
+  line-height: 7vh;
+  background: linear-gradient(to right, #E1EAF1 0%, #F4F8F9 30%);
+}
+header nav {
+  height: 100%;
+}
+header nav ul {
+  float:right;
+  width: 50%;
+}
+header nav ul li {
+  display: inline-block;
+  margin-right: 1.5vw;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+header nav ul li a:hover {
+  color: #FF931F;
+}
+
+/* Welcome */
+#welcome {
+  height: 93vh;
+  background-image: url("../images/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 12.5vh;
+  padding-left: 10vw;
+}
+#welcome h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  width: 50%;
+  line-height: 6.5rem;
+}
+#welcome form {
+  position: relative;
+  margin-top: 1vh;
+}
+#welcome form i {
+  position: absolute;
+  top: 1.5vh;
+  left: 0.8vw;
+  color: grey;
+}
+#welcome input, #welcome select {
+  padding: 1.5vh 20vw 1.5vh 2vw;
+  border: 1px solid grey;
+  border-radius: 5px 0 0 5px;
+  caret-color:#FF931F;
+  float: left;
+}
+#welcome select{
+  background-color: #FF931F;
+  color: white;
+  padding-right: 0;
+  padding-left: 1vw;
+  border-radius: 0 5px 5px 0;
+}
+#welcome ul {
+  clear: left;
+  padding-top: 2vh;
+}
+#welcome ul li {
+  float: left;
+  margin-right: 1.5vw;
+}
+#welcome ul li i {
+  color: #FF931F;
+}
+#welcome ul li span {
+  font-size: 1.1rem;
+}
+
+/* About Us */
+#about-us {
+  height: 100vh;
+  position: relative;
+}
+#about-us img {
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
+#about-us img + img {
+  right: 0;
+  bottom: 0;
+  height: 80%;
+}
+#about-us span, #about-us h2, #about-us p, #about-us a {
+  padding-left: 6vw;
+  width: 100vw;
+}
+#about-us div {
+  margin-left: 34vw;
+  padding-top: 15vh;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+#about-us span {
+  color: #FF931F;
+  font-size: 1.3rem;
+}
+#about-us h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 4rem;
+  padding: 1.5vh 0 2.5vh 6vw;
+  width: 70%;
+}
+#about-us p {
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+  width: 80%;
+}
+#about-us p + p {
+  padding-top: 2.5vh;
+  padding-bottom: 5vh;
+}
+#about-us a {
+  background-color: #FF931F;
+  color: white;
+  margin-left: 6vw;
+  padding: 1vh 1vw;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#about-us a:hover {
+  background-color: #ffbf00;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
